@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(197, 164, 227);
+}
+
+li {
+    list-style-type: none;
+    min-width: 200px;
+    background-color: orange;
+    padding: 10px;
+    margin: 3px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+}
+
+.listbutton{
+    background-color: rgb(235, 193, 115);
+    padding: 5px;
+    border-radius: 10px;
+}
