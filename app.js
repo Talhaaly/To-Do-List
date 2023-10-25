@@ -6,10 +6,10 @@ function submitHandler() {
 
     // console.log(listItemInput.value);
 
-    const li = `<li>${listItemInput.value}
+    const li = `<li id=${listItemInput.value}>${listItemInput.value}
     <div>
-<span class="listbutton" id="edit">Edit</span>
-<span class="listbutton" id="delete">Delete</span>
+<span class="listbutton" id="edit" onclick ="editHandler('${listItemInput.value}')">Edit</span>
+<span class="listbutton" id="delete" onclick ="deleteHandler('${listItemInput.value}')">Delete</span>
 </div>
 </li>`
 
@@ -30,6 +30,15 @@ function submitHandler() {
 //  myUnOrderList.appendChild(li)
 
 
- myUnOrderList.innerHTML = li
+ myUnOrderList.innerHTML += li
+ listItemInput.value = " "
 
 }
+ 
+ function editHandler (val){
+     console.log(val);
+    } 
+    
+   function deleteHandler (val1) {
+        console.log(val1);
+    } 
